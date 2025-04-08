@@ -27,6 +27,7 @@ const App = () => {
       setMessage('Ensure MetaMask is connected and all fields are filled.');
       return;
     }
+    setMessage('');
 
     try {
       const provider = new ethers.BrowserProvider(window.ethereum);
